@@ -27,7 +27,6 @@ nav {
     letter-spacing: 5px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    /* margin-left: 20px; */
 }
 .nav-links {
     display: flex;
@@ -66,14 +65,13 @@ nav {
     .nav-links {
         width: 50%;        
     }
-    .logo {
+    #logo {
         font-size: 18px;
     }
 }
 @media screen and (max-width:768px){
     body{
         overflow-x: hidden;
-        /* background-color: blue; */
     }
     #name-pic-cont{
         flex-direction: column;
@@ -118,21 +116,14 @@ nav {
     }
 }
 @media screen and (max-width:475px){
-    
     #cred-container{
         flex-direction: column;
-        /* justify-content: space-between; */
-        /* padding: 5vh; */
     }
     .certs{
         width: 60vw;
         height: 45vw;
         transform: scale(1);
         margin-bottom: 3vh;
-        /* padding: 1vh; */
-        /* row-gap: 4vh; */
-        /* margin: 10vh; */
-        /* flex-basis: 60%; */
     }
     .certs:hover{
         transform: scale(300%);
@@ -242,7 +233,6 @@ section{
 #Home h2 {
     color: rgb(101, 14, 160);
     font-family: copperplate;
-    /* margin: 10px; */
     text-shadow: 2px 2px 2px white;
 }
 h3 {
@@ -262,13 +252,14 @@ h3 {
 }
 p{
     padding: 3vh;
+    font-family: Arial;
 }
 #Projects {
     padding-bottom: 5vh;
     border: solid 2px;
     border-radius: 5%;
     background-image: linear-gradient(0deg, purple, gray, white, grey, purple);
-    height: 100%;
+    height: fit-content;
     text-align: center;
 }
 #project-container {
@@ -285,7 +276,7 @@ h2 {
 }
 .project-tile {
     width: 27vw;
-    height: auto;
+    height: 35vw;
     margin: 2vw;
     border: 2px solid black;
     border-radius: 15%;
@@ -300,9 +291,10 @@ h2 {
 }
 .proj-name{
     padding: 10px;
+    margin-bottom: 20px;
 }
 .project-pics {
-    width: 80%;
+    width: 85%;
     height: 65%;
     border-radius: 10%;
     border: 1px solid black;

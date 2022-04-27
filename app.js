@@ -37,10 +37,6 @@ const navSlide = () => {
             pic.classList.toggle('pic-active');
             guru.classList.toggle('pic-active');
         } 
-        // else {
-        //     pic.classList.remove('pic-active');
-        //     guru.classList.remove('pic-active');
-        // }
         slide();        
     });
 
@@ -49,10 +45,6 @@ const navSlide = () => {
             pic.classList.toggle('pic-active');
             guru.classList.toggle('pic-active');
         }
-        //  else {
-        //     pic.classList.remove('pic-active');
-        //     guru.classList.remove('pic-active');
-        // }
         slide();
         
         
