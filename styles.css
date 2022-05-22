@@ -61,97 +61,7 @@ nav {
     display: none;
 }
 
-@media screen and (max-width:1024px){
-    .nav-links {
-        width: 50%;        
-    }
-    #logo {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
-    #name-pic-cont{
-        flex-direction: column;
-        align-items: center;
-    }
-    #profile-pic{
-        height: 8vh;
-        width: 8vh;
-    }
-    .project-tile {
-        flex-basis: 45%;
-        width: 45vw;
-    }
-    .certs{
-        flex-basis: 40%;
-        width: 40vw;
-    }
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 55vh;
-        top: 7.8vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: blueviolet;
-        width: fit-content;
-        transform: translate(100%);
-        transition: transform 0.5s ease-in;
-        border-radius: 2%;
-        border: 1px solid rgb(100, 32, 163);
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-    #Contact{
-        height:30vh;
-    }
-}
-@media screen and (max-width:475px){
-    #cred-container{
-        flex-direction: column;
-    }
-    .certs{
-        width: 60vw;
-        height: 45vw;
-        transform: scale(1);
-        margin-bottom: 3vh;
-    }
-    .certs:hover{
-        transform: scale(300%);
-    }
-    .project-tile{
-        flex-basis: 80%;
-        width: 80%;
-        row-gap: 10vh;
-    }
-    section{
-        padding-top: 5vh;
-    }
-    code{
-        font-size: 3vh;
-    }
-    #profile-pic{
-        height: 25vw;
-        
-    }
-    section h2{
-        font-size: 6vw;
-    }
-    #name{
-        font-size: 7vw;
-    }
-    
-    
-}
+
 .nav-active{
     transform: translateX(0%);
 }
@@ -233,10 +143,17 @@ section{
     height: 30vh;
     width: 30vh;
 }
+
+#profile-pic.pic-active{
+    height: 28vh;
+    width: 28vh;
+}
+
 #name.pic-active{
     font-family: Tahoma;
     font-size: 5vw;
     padding-top: 3vh;
+    word-wrap: break-word;
 }
 #Home h2 {
     color: rgb(101, 14, 160);
@@ -308,6 +225,7 @@ h2 {
     border: 1px solid black;
     margin-top: 2vh;
 }
+
 a{
     text-decoration: none;
     /* margin: 3vh; */
@@ -405,3 +323,103 @@ button{
     color: rgb(176, 23, 206);
 }
 
+@media screen and (max-width:1024px){
+    .nav-links {
+        width: 50%;        
+    }
+    #logo {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    #name-pic-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    #profile-pic{
+        height: 8vh;
+        width: 8vh;
+    }
+    .project-tile {
+        flex-basis: 45%;
+        width: 45vw;
+    }
+    .certs{
+        flex-basis: 40%;
+        width: 40vw;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 55vh;
+        top: 7.8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: blueviolet;
+        width: fit-content;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+        border-radius: 2%;
+        border: 1px solid rgb(100, 32, 163);
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    #Contact{
+        height:30vh;
+    }
+}
+@media screen and (max-width:475px){
+    #cred-container{
+        flex-direction: column;
+    }
+    .certs{
+        width: 60vw;
+        height: 45vw;
+        transform: scale(1);
+        margin-bottom: 3vh;
+    }
+    .certs:hover{
+        transform: scale(300%);
+    }
+    #project-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-tile{
+        /* flex-basis: 80%; */
+        height: 80vw;
+        width: 80vw;
+        /* row-gap: 10vh; */
+    }
+    .project-pics {
+        height: 20vh;
+    }
+    
+    section{
+        padding-top: 5vh;
+    }
+    code{
+        font-size: 3vh;
+    }
+    #profile-pic{
+        height: 25vw;
+        
+    }
+    section h2{
+        font-size: 6vw;
+    }
+    #name{
+        font-size: 7vw;
+    }
+    
+    
+}
