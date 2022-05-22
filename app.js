@@ -6,6 +6,7 @@ const navSlide = () => {
     const width = window.innerWidth;
     const pic = document.querySelector('#profile-pic');
     const guru = document.querySelector('#guru');
+    const name = document.querySelector('#name');
     
     console.log(width);
     // const screenCheck = () =>{
@@ -36,6 +37,7 @@ const navSlide = () => {
         if (width <= 475){
             pic.classList.toggle('pic-active');
             guru.classList.toggle('pic-active');
+            name.classList.toggle('pic-active');
         } 
         slide();        
     });

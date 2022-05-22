@@ -216,6 +216,9 @@ section{
     margin: 10px;
     text-shadow: 2px 2px 4px black;
 }
+#guru.pic-active{
+    font-size: 4vw;
+}
 #name-pic-cont{
     display: flex;
     justify-content: center;
@@ -229,6 +232,11 @@ section{
     margin-right: 4vw;
     height: 30vh;
     width: 30vh;
+}
+#name.pic-active{
+    font-family: Tahoma;
+    font-size: 5vw;
+    padding-top: 3vh;
 }
 #Home h2 {
     color: rgb(101, 14, 160);
