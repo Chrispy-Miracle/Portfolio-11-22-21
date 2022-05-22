@@ -145,7 +145,17 @@ nav {
         word-wrap: break-word;
     }
     #name{
-        font-size: 6vw;
+        font-size: 5vw;
+        word-wrap: break-word;
+        width: 80%;
+    }
+    #guru {
+        width: 80%;
+    }
+    #name.pic-active{
+        font-family: Tahoma;
+        font-size: 5vw;
+        padding-top: 3vh;
         word-wrap: break-word;
     }
 }
@@ -254,6 +264,7 @@ section{
     padding-top: 7vh;
     margin: 10px;
     text-shadow: 2px 2px 4px black;
+    width: 90%
  }
 #guru.pic-active{
     font-size: 4vw;
@@ -279,12 +290,12 @@ section{
     margin-right: 12px
 }
 
-#name.pic-active{
+/* #name.pic-active{
     font-family: Tahoma;
     font-size: 5vw;
     padding-top: 3vh;
     word-wrap: break-word;
-}
+} */
 #Home h2 {
     color: rgb(101, 14, 160);
     font-family: copperplate;
