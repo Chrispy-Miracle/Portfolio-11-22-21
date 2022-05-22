@@ -217,6 +217,7 @@ h2 {
 .proj-name{
     padding: 10px;
     margin-bottom: 20px;
+    font-size: 2vw;
 }
 .project-pics {
     width: 85%;
@@ -403,7 +404,10 @@ button{
     .project-pics {
         height: 20vh;
     }
-    
+    .proj-name{
+        font-size: 4vw;
+        word-wrap: break-word;
+    }
     section{
         padding-top: 5vh;
     }
