@@ -141,7 +141,7 @@ nav {
         height:30vh;
     }
     .proj-name{
-        font-size: 4vw;
+        /* font-size: 4vw; */
         word-wrap: break-word;
     }
     #name{
