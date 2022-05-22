@@ -8,7 +8,7 @@ const navSlide = () => {
     const guru = document.querySelector('#guru');
     const name = document.querySelector('#name');
     
-    console.log(width);
+    // console.log(width);
     // const screenCheck = () =>{
         
     //     //slide pic to right

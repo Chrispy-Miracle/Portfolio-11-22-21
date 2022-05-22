@@ -60,23 +60,152 @@ nav {
 .burger{
     display: none;
 }
-
-
-.nav-active{
-    transform: translateX(0%);
+#name {
+    padding-left: 20px;
 }
-.pic-active{
-    transform: translateX(-17vw);
+.project-tile {
+    width: 27vw;
+    height: 35vw;
+    margin: 2vw;
+    border: 2px solid black;
+    border-radius: 15%;
+    text-align: center;    
+    background-image: linear-gradient(75deg, teal, white, green);
+    font-size: 2.25vw;
+    font-family: lucida handwriting;
+    padding: 2vw;
+}
+.project-tile:hover {
+    transform: scale(110%);
+}
+.proj-name{
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+.project-pics {
+    width: 85%;
+    height: 65%;
+    border-radius: 10%;
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+/* Put media queries back here? */
+@media screen and (max-width:1024px){
+    .nav-links {
+        width: 50%;        
+    }
+    #logo {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    #name-pic-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-tile {
+        flex-basis: 45%;
+        width: 45vw;
+    }
+    .certs{
+        flex-basis: 40%;
+        width: 40vw;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 55vh;
+        top: 7.8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: blueviolet;
+        width: fit-content;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+        border-radius: 2%;
+        border: 1px solid rgb(100, 32, 163);
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    #Contact{
+        height:30vh;
+    }
+    .proj-name{
+        font-size: 4vw;
+        word-wrap: break-word;
+    }
+    #name{
+        font-size: 6vw;
+        word-wrap: break-word;
+    }
+}
+@media screen and (max-width:475px){
+    #cred-container{
+        flex-direction: column;
+    }
+    .certs{
+        width: 60vw;
+        height: 45vw;
+        transform: scale(1);
+        margin-bottom: 3vh;
+    }
+    .certs:hover{
+        transform: scale(300%);
+    }
+    #project-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-tile{
+        height: 80vw;
+        width: 80vw;
+   }
+    .project-pics {
+        height: 20vh;
+    }
+    /* .proj-name{
+        font-size: 4vw;
+        word-wrap: break-word;
+    } */
+    section{
+        padding-top: 5vh;
+    }
+    code{
+        font-size: 3vh;
+    }
+    section h2{
+        font-size: 6vw;
+    }
+    #name{
+        font-size: 7vw;
+        padding-left: 0;
+    }
 }
 @keyframes navLinkFade{
     from{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(55px);
     }
     to{
         opacity: 1;
         transform: translateX(0px);
     }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+.pic-active{
+    transform: translateX(-17vw);
 }
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -125,7 +254,7 @@ section{
     padding-top: 7vh;
     margin: 10px;
     text-shadow: 2px 2px 4px black;
-}
+ }
 #guru.pic-active{
     font-size: 4vw;
 }
@@ -139,7 +268,7 @@ section{
     border-radius: 10%;
     border: 2px solid black;
     z-index: 0;
-    margin-right: 4vw;
+    /* margin-right: 4vw; */
     height: 30vh;
     width: 30vh;
 }
@@ -147,6 +276,7 @@ section{
 #profile-pic.pic-active{
     height: 28vh;
     width: 28vh;
+    margin-right: 12px
 }
 
 #name.pic-active{
@@ -176,8 +306,11 @@ h3 {
     text-shadow: 1px 1px black;
 }
 p{
-    padding: 3vh;
-    font-family: Arial;
+    padding: 2vh;
+    font-family:Tahoma;
+    font-size: 16px;
+    text-transform: none;
+    line-height: 1.5;
 }
 #Projects {
     padding-bottom: 5vh;
@@ -199,7 +332,7 @@ h2 {
     text-align: center;
     padding-top: 6vh;
 }
-.project-tile {
+/* .project-tile {
     width: 27vw;
     height: 35vw;
     margin: 2vw;
@@ -210,8 +343,8 @@ h2 {
     font-size: 2.25vw;
     font-family: lucida handwriting;
     padding: 2vw;
-}
-.project-tile:hover {
+} */
+/* .project-tile:hover {
     transform: scale(110%);
 }
 .proj-name{
@@ -225,7 +358,7 @@ h2 {
     border-radius: 10%;
     border: 1px solid black;
     margin-top: 2vh;
-}
+} */
 
 a{
     text-decoration: none;
@@ -322,108 +455,4 @@ button{
 }
 #codepen-profile:hover {
     color: rgb(176, 23, 206);
-}
-
-@media screen and (max-width:1024px){
-    .nav-links {
-        width: 50%;        
-    }
-    #logo {
-        font-size: 18px;
-    }
-}
-@media screen and (max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
-    #name-pic-cont{
-        flex-direction: column;
-        align-items: center;
-    }
-    #profile-pic{
-        height: 8vh;
-        width: 8vh;
-    }
-    .project-tile {
-        flex-basis: 45%;
-        width: 45vw;
-    }
-    .certs{
-        flex-basis: 40%;
-        width: 40vw;
-    }
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 55vh;
-        top: 7.8vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: blueviolet;
-        width: fit-content;
-        transform: translate(100%);
-        transition: transform 0.5s ease-in;
-        border-radius: 2%;
-        border: 1px solid rgb(100, 32, 163);
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger {
-        display: block;
-        cursor: pointer;
-    }
-    #Contact{
-        height:30vh;
-    }
-}
-@media screen and (max-width:475px){
-    #cred-container{
-        flex-direction: column;
-    }
-    .certs{
-        width: 60vw;
-        height: 45vw;
-        transform: scale(1);
-        margin-bottom: 3vh;
-    }
-    .certs:hover{
-        transform: scale(300%);
-    }
-    #project-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .project-tile{
-        /* flex-basis: 80%; */
-        height: 80vw;
-        width: 80vw;
-        /* row-gap: 10vh; */
-    }
-    .project-pics {
-        height: 20vh;
-    }
-    .proj-name{
-        font-size: 4vw;
-        word-wrap: break-word;
-    }
-    section{
-        padding-top: 5vh;
-    }
-    code{
-        font-size: 3vh;
-    }
-    #profile-pic{
-        height: 25vw;
-        
-    }
-    section h2{
-        font-size: 6vw;
-    }
-    #name{
-        font-size: 7vw;
-    }
-    
-    
 }
