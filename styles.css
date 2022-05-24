@@ -60,6 +60,14 @@ nav {
 .burger{
     display: none;
 }
+#guru{
+    font-size: 5vw;
+    font-family: papyrus;
+    padding-top: 7vh;
+    margin: 10px;
+    text-shadow: 2px 2px 4px black;
+    width: 90%
+ }
 #name {
     padding-left: 20px;
 }
@@ -183,9 +191,9 @@ nav {
         flex-direction: column;
     }
     #guru {
-        width: 90%;
-        font-size: 5vh;
-        word-wrap: break-word;
+        /* width: 50vw; */
+        font-size: 3vh;
+        /* word-wrap: break-word; */
     }
     .certs{
         width: 60vw;
@@ -289,14 +297,7 @@ section{
     background-image: linear-gradient(45deg, rgb(34, 32, 32), magenta, orange, black);
     text-align: center;
 }
-#guru{
-    font-size: 5vw;
-    font-family: papyrus;
-    padding-top: 7vh;
-    margin: 10px;
-    text-shadow: 2px 2px 4px black;
-    width: 90%
- }
+
 #guru.pic-active{
     font-size: 4vw;
 }
