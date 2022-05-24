@@ -169,6 +169,8 @@ nav {
     }
     #guru {
         width: 80%;
+        word-wrap: break-word;
+
     }
     #name.pic-active{
         font-family: Tahoma;
