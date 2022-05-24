@@ -90,6 +90,24 @@ nav {
     border: 1px solid black;
     margin-top: 2vh;
 }
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 90vw; */
+}
+.welcome-pics {
+   height: 15vw;
+   width: auto;
+   border-radius: 10px;
+   margin: 2vw;
+}
+#me-on-comp-pic {
+    width: 50vw;
+    height: auto;
+}
+
 /* Put media queries back here? */
 @media screen and (max-width:1024px){
     .nav-links {
@@ -199,6 +217,13 @@ nav {
     #name{
         font-size: 7vw;
         padding-left: 0;
+    }
+    #welcome {
+        flex-direction: column;
+    }
+    .welcome-pics{
+        width: 45vw;
+        height: auto;
     }
 }
 @keyframes navLinkFade{
@@ -316,11 +341,12 @@ h3 {
     display: block;
     text-shadow: 1px 1px black;
 }
+
 p{
     padding: 2vh;
     font-family:Tahoma;
     font-size: 16px;
-    text-transform: none;
+    /* text-transform: none; */
     line-height: 1.5;
 }
 #Projects {
