@@ -167,11 +167,10 @@ nav {
         word-wrap: break-word;
         width: 80%;
     }
-    #guru {
+    /* #guru {
         width: 90%;
         word-wrap: break-word;
-
-    }
+    } */
     #name.pic-active{
         font-family: Tahoma;
         font-size: 5vw;
@@ -182,6 +181,11 @@ nav {
 @media screen and (max-width:475px){
     #cred-container{
         flex-direction: column;
+    }
+    #guru {
+        width: 90%;
+        font-size: 5vh;
+        word-wrap: break-word;
     }
     .certs{
         width: 60vw;
