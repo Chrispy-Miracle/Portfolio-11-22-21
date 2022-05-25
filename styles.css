@@ -205,10 +205,11 @@ nav {
         word-wrap: break-word;
         width: 80%;
     }
-    /* #guru {
-        width: 90%;
-        word-wrap: break-word;
-    } */
+    #guru {
+        font-size: 7vw;
+        /* width: 90%;
+        word-wrap: break-word; */
+    }
     #name.pic-active{
         font-family: Tahoma;
         font-size: 5vw;
