@@ -218,11 +218,11 @@ nav {
     #cred-container{
         flex-direction: column;
     }
-    /* #guru.pic-active {
-        max-width: 35vw;
-        font-size: 3vh;
-        word-wrap: break-word;
-    } */
+    #guru.pic-active {
+        /* max-width: 35vw; */
+        font-size: 5vw;
+        /* word-wrap: break-word; */
+    }
     .certs{
         width: 75vw;
         height: auto;
