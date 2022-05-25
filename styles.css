@@ -223,7 +223,7 @@ nav {
         max-width: 35vw; */
         font-size: 5vw;
         /* margin-left: 15vw; */
-        word-wrap:normal;
+        word-wrap: break-word;
     }
     .certs{
         width: 75vw;
