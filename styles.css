@@ -116,6 +116,34 @@ nav {
     height: auto;
 }
 
+#Credentials {
+    background-image: linear-gradient(blueviolet, purple);
+    /* padding-top: 14vh; */
+    padding-bottom: 5vh;
+    height: 100%;
+    border: 2px solid purple;
+    border-radius: 5%;
+    margin-bottom: 2vh;
+}
+#cred-container{
+    display: flex; 
+    margin-top: 5vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.certs {
+    width: 35vw;
+    height: auto;
+    flex-basis: 35%;
+    column-gap: 3vw;
+    row-gap: 3vh;
+    margin: 3vh;
+}
+.certs:hover{
+    transform: scale(110%);
+}
+
 /* Put media queries back here? */
 @media screen and (max-width:1024px){
     .nav-links {
@@ -196,13 +224,13 @@ nav {
         word-wrap: break-word;
     } */
     .certs{
-        width: 60vw;
-        height: 45vw;
-        transform: scale(1);
+        width: 75vw;
+        height: auto;
+        /* transform: scale(1.4); */
         margin-bottom: 3vh;
     }
     .certs:hover{
-        transform: scale(300%);
+        transform: scale(1.2);
     }
     #project-container{
         flex-direction: column;
@@ -408,33 +436,7 @@ a{
     text-decoration: none;
     /* margin: 3vh; */
 }
-#Credentials {
-    background-image: linear-gradient(blueviolet, purple);
-    /* padding-top: 14vh; */
-    padding-bottom: 5vh;
-    height: 100%;
-    border: 2px solid purple;
-    border-radius: 5%;
-    margin-bottom: 2vh;
-}
-#cred-container{
-    display: flex; 
-    margin-top: 5vh;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.certs {
-    width: 35vw;
-    height: auto;
-    flex-basis: 35%;
-    column-gap: 3vw;
-    row-gap: 3vh;
-    margin: 3vh;
-}
-.certs:hover{
-    transform: scale(110%);
-}
+
 #Contact {
     height: fit-content;
     border: solid;
