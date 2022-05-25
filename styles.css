@@ -190,11 +190,11 @@ nav {
     #cred-container{
         flex-direction: column;
     }
-    #guru.pic-active {
-        /* width: 50vw; */
+    /* #guru.pic-active {
+        width: 35vw;
         font-size: 3vh;
         word-wrap: break-word;
-    }
+    } */
     .certs{
         width: 60vw;
         height: 45vw;
@@ -298,9 +298,9 @@ section{
     text-align: center;
 }
 
-#guru.pic-active{
-    font-size: 4vw;
-}
+/* #guru.pic-active{
+    font-size: 3vw;
+} */
 #name-pic-cont{
     display: flex;
     justify-content: center;
