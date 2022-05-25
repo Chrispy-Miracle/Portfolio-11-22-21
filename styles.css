@@ -61,12 +61,14 @@ nav {
     display: none;
 }
 #guru{
-    font-size: 5vw;
-    font-family: papyrus;
+    font-size: 6vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Delius'; */
     padding-top: 7vh;
     margin: 10px;
     text-shadow: 2px 2px 4px black;
     /* width: 90%; */
+    /* text-transform: none; */
  }
 #name {
     padding-left: 20px;
@@ -215,6 +217,9 @@ nav {
     }
 }
 @media screen and (max-width:475px){
+    .logo {
+        margin-left: 25px;
+    }
     #cred-container{
         flex-direction: column;
     }
