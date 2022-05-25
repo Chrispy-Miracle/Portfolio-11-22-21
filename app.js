@@ -46,6 +46,8 @@ const navSlide = () => {
         if (width <= 475){
             pic.classList.toggle('pic-active');
             guru.classList.toggle('pic-active');
+            name.classList.toggle('pic-active');
+
         }
         slide();
         
