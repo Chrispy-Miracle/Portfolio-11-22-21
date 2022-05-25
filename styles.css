@@ -223,10 +223,13 @@ nav {
     #cred-container{
         flex-direction: column;
     }
+    #guru {
+        font-size: 7vw;
+    }
     #guru.pic-active {
         /* text-align: center; */
         /* max-width: 35vw; */
-        font-size: 7vw;
+        
         /* margin-left: 20vw; */
         overflow-wrap: break-word;  
         word-wrap: break-word; 
