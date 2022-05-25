@@ -190,10 +190,10 @@ nav {
     #cred-container{
         flex-direction: column;
     }
-    #guru {
+    #guru.pic-active {
         /* width: 50vw; */
         font-size: 3vh;
-        /* word-wrap: break-word; */
+        word-wrap: break-word;
     }
     .certs{
         width: 60vw;
