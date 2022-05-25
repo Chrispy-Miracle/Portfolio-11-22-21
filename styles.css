@@ -224,7 +224,7 @@ nav {
         flex-direction: column;
     }
     #guru {
-        font-size: 7vw;
+        font-size: 8vw;
     }
     #guru.pic-active {
         /* text-align: center; */
