@@ -219,11 +219,13 @@ nav {
         flex-direction: column;
     }
     #guru.pic-active {
-        /* text-align: center;
-        max-width: 35vw; */
+        /* text-align: center; */
+        /* max-width: 35vw; */
         font-size: 5vw;
-        /* margin-left: 15vw; */
-        word-wrap: break-word;
+        /* margin-left: 20vw; */
+        overflow-wrap: break-word;  
+        word-wrap: break-word; 
+        word-break: break-word;
     }
     .certs{
         width: 75vw;
