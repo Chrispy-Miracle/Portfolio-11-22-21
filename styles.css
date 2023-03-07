@@ -63,12 +63,9 @@ nav {
 #guru{
     font-size: 6vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* font-family: 'Delius'; */
     padding-top: 7vh;
     margin: 10px;
     text-shadow: 2px 2px 4px black;
-    /* width: 90%; */
-    /* text-transform: none; */
  }
 #name {
     padding-left: 20px;
@@ -93,19 +90,20 @@ nav {
     margin-bottom: 20px;
     font-size: 2vw;
 }
-.project-pics {
+.project-pics, #plantit-vid {
     width: 85%;
     height: 65%;
     border-radius: 10%;
     border: 1px solid black;
     margin-top: 2vh;
 }
-
+#plantit-vid:hover, .project-pics:hover {
+    transform: scale(110%);
+}
 #welcome{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 90vw; */
 }
 .welcome-pics {
    height: 15vw;
@@ -120,11 +118,10 @@ nav {
 
 #Credentials {
     background-image: linear-gradient(blueviolet, purple);
-    /* padding-top: 14vh; */
     padding-bottom: 5vh;
     height: 100%;
     border: 2px solid purple;
-    border-radius: 5%;
+    border-radius: 20px;
     margin-bottom: 2vh;
 }
 #cred-container{
@@ -197,7 +194,6 @@ nav {
         height:30vh;
     }
     .proj-name{
-        /* font-size: 4vw; */
         word-wrap: break-word;
     }
     #name{
@@ -207,8 +203,6 @@ nav {
     }
     #guru {
         font-size: 8vw;
-        /* width: 90%;
-        word-wrap: break-word; */
     }
     #name.pic-active{
         font-family: Tahoma;
@@ -228,10 +222,6 @@ nav {
         font-size: 8vw;
     }
     #guru.pic-active {
-        /* text-align: center; */
-        /* max-width: 35vw; */
-        
-        /* margin-left: 20vw; */
         overflow-wrap: break-word;  
         word-wrap: break-word; 
         word-break: break-word;
@@ -239,7 +229,6 @@ nav {
     .certs{
         width: 75vw;
         height: auto;
-        /* transform: scale(1.4); */
         margin-bottom: 3vh;
     }
     .certs:hover{
@@ -256,10 +245,6 @@ nav {
     .project-pics {
         height: 20vh;
     }
-    /* .proj-name{
-        font-size: 4vw;
-        word-wrap: break-word;
-    } */
     section{
         padding-top: 5vh;
     }
@@ -322,6 +307,7 @@ section{
     letter-spacing: 5px;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
+    border-radius: 20px;;
 }
 #title {
     font-size: 5vh;
@@ -332,16 +318,12 @@ section{
     padding-left: 5vw;
     margin-bottom: 1vh;
     border: solid black 1px;
-    border-radius: 4%;
     display: block;
     height: 100%;
     background-image: linear-gradient(45deg, rgb(34, 32, 32), magenta, orange, black);
     text-align: center;
 }
 
-/* #guru.pic-active{
-    font-size: 3vw;
-} */
 #name-pic-cont{
     display: flex;
     justify-content: center;
@@ -352,23 +334,14 @@ section{
     border-radius: 10%;
     border: 2px solid black;
     z-index: 0;
-    /* margin-right: 4vw; */
     height: 30vh;
     width: 30vh;
 }
-
 #profile-pic.pic-active{
     height: 28vh;
     width: 28vh;
     margin-right: 12px
 }
-
-/* #name.pic-active{
-    font-family: Tahoma;
-    font-size: 5vw;
-    padding-top: 3vh;
-    word-wrap: break-word;
-} */
 #Home h2 {
     color: rgb(101, 14, 160);
     font-family: copperplate;
@@ -394,13 +367,11 @@ p{
     padding: 2vh;
     font-family:Tahoma;
     font-size: 16px;
-    /* text-transform: none; */
     line-height: 1.5;
 }
 #Projects {
     padding-bottom: 5vh;
     border: solid 2px;
-    border-radius: 5%;
     background-image: linear-gradient(0deg, purple, gray, white, grey, purple);
     height: fit-content;
     text-align: center;
@@ -417,37 +388,8 @@ h2 {
     text-align: center;
     padding-top: 6vh;
 }
-/* .project-tile {
-    width: 27vw;
-    height: 35vw;
-    margin: 2vw;
-    border: 2px solid black;
-    border-radius: 15%;
-    text-align: center;    
-    background-image: linear-gradient(75deg, teal, white, green);
-    font-size: 2.25vw;
-    font-family: lucida handwriting;
-    padding: 2vw;
-} */
-/* .project-tile:hover {
-    transform: scale(110%);
-}
-.proj-name{
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 2vw;
-}
-.project-pics {
-    width: 85%;
-    height: 65%;
-    border-radius: 10%;
-    border: 1px solid black;
-    margin-top: 2vh;
-} */
-
 a{
     text-decoration: none;
-    /* margin: 3vh; */
 }
 
 #Contact {
@@ -468,8 +410,6 @@ a{
     justify-content: center;
 }
 button{
-    /* background-color: blue; */
-    
     height: fit-content;
     width: fit-content;
 }
@@ -479,13 +419,10 @@ button{
 }
 #email{
     color: black;
-    /* padding: 8vh 0 8vh 0; */
     padding-bottom: 3vh;
 }
 #email:hover {
     color: rgb(255, 0, 0);
-    /* text-shadow: 2px 2px 2px black; */
-    
 }
 #github-profile-link {
     text-decoration: none;
