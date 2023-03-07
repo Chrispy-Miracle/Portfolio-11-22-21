@@ -307,7 +307,7 @@ section{
     letter-spacing: 5px;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
-    border-radius: 20px;;
+    border-radius: 20px;
 }
 #title {
     font-size: 5vh;
@@ -395,7 +395,6 @@ a{
 #Contact {
     height: fit-content;
     border: solid;
-    border-radius: 5%;
     margin-bottom: 5vh;
     display: block;
     padding-top: 14vh;
