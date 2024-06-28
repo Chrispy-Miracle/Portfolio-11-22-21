@@ -90,14 +90,14 @@ nav {
     margin-bottom: 20px;
     font-size: 2vw;
 }
-.project-pics, #plantit-vid, #tone-vis-vid {
+.project-pics, #plantit-vid, #tone-vis-vid, #steal-candy-vid {
     width: 85%;
     height: 65%;
     border-radius: 10%;
     border: 1px solid black;
     margin-top: 2vh;
 }
-#plantit-vid:hover, .project-pics:hover, #tone-vis-vid:hover {
+#plantit-vid:hover, .project-pics:hover, #tone-vis-vid:hover, #steal-candy-vid:hover {
     transform: scale(110%);
 }
 #welcome{
